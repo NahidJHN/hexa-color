@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RGB color Game</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div id="outPut" class="myDiv">
+   </div>
+   <div class="range">
+      <div class="center">
+         <div>RED ONE</div>
+         <input type="range" oninput="mainEventHandler()" class='Range' value='2' name="" min="0" max="15"
+            id="redRange">
+         <div class="center showValue" id='redFirstValue'> </div>
+      </div>
+      <div class="center">
+         <div>RED TWO</div>
+         <input type="range" oninput="mainEventHandler()" class='Range' value='1' name="" min="0" max="15"
+            id="greenRange">
+         <div class="center showValue" id='redSecondValue'></div>
+      </div>
+      <div class="center">
+         <div>GREEN ONE</div>
+         <input type="range" oninput="mainEventHandler()" class='Range' value='6' name="" min="0" max="15"
+            id="blueRange">
+         <div class="center showValue" id='greenFirstValue'></div>
+      </div>
+      <div class="center">
+         <div>GREEN TWO</div>
+         <input type="range" oninput="mainEventHandler()" class='Range' value='0' name="" min="0" max="15"
+            id="redRange">
+         <div class="center showValue" id='greenSecondValue'> </div>
+      </div>
+      <div class="center">
+         <div>BLUE ONE</div>
+         <input type="range" oninput="mainEventHandler()" class='Range' value='9' name="" min="0" max="15"
+            id="greenRange">
+         <div class="center showValue" id='blueFirstValue'></div>
+      </div>
+      <div class="center">
+         <div>BLUE TWO</div>
+         <input type="range" oninput="mainEventHandler()" class='Range' value='11' name="" min="0" max="15"
+            id="blueRange">
+         <div class="center showValue" id='blueSecondValue'></div>
+      </div>
+   </div>
+   <div id="myText">
+      <h1>Increase And Decrease The Range And See The Effect</h1>
+   </div>
+   <script src="index.js"></script>
+</body>
+
+</html>
